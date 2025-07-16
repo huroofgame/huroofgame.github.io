@@ -1,46 +1,39 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+
+<html dir="rtl" lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="لعبة الحروف - إحياء برنامج حروف التعليمي الشهير بتقنية عصرية. احصل على خصم 40% لفترة محدودة!">
-    <meta name="keywords" content="لعبة حروف, برنامج تعليمي, العاب تعليمية, حروف عربية">
-    <meta name="author" content="محمد">
-    
-    <!-- Open Graph tags for social sharing -->
-    <meta property="og:title" content="لعبة الحروف - إحياء التراث التعليمي">
-    <meta property="og:description" content="استعد للعودة إلى أجواء المسابقات القديمة مع لعبة الحروف. خصم 40% لفترة محدودة!">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="ar_SA">
-    <meta property="og:url" content="https://7asibali.github.io/huroofgame/">
-    <meta property="og:image" content="https://7asibali.github.io/huroofgame/og-image.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    
-    <!-- Twitter Card tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="لعبة الحروف">
-    <meta name="twitter:description" content="إحياء التراث التعليمي السعودي بتقنية عصرية">
-    <meta name="twitter:image" content="https://7asibali.github.io/huroofgame/twitter-card.png">
-    
-    <title>لعبة الحروف - إحياء التراث التعليمي بلمسة عصرية</title>
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://7asibali.github.io/huroofgame/">
-    
-    <!-- Language alternatives -->
-    <link rel="alternate" hreflang="ar" href="https://7asibali.github.io/huroofgame/">
-    <link rel="alternate" hreflang="x-default" href="https://7asibali.github.io/huroofgame/">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>🎮</text></svg>">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
-    
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="لعبة الحروف - إحياء برنامج حروف التعليمي الشهير بتقنية عصرية. احصل على خصم 40% لفترة محدودة!" name="description"/>
+<meta content="لعبة حروف, برنامج تعليمي, العاب تعليمية, حروف عربية" name="keywords"/>
+<meta content="محمد" name="author"/>
+<!-- Open Graph tags for social sharing -->
+<meta content="لعبة الحروف - إحياء التراث التعليمي" property="og:title"/>
+<meta content="استعد للعودة إلى أجواء المسابقات القديمة مع لعبة الحروف. خصم 40% لفترة محدودة!" property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="ar_SA" property="og:locale"/>
+<meta content="https://7asibali.github.io/huroofgame/" property="og:url"/>
+<meta content="https://7asibali.github.io/huroofgame/og-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<!-- Twitter Card tags -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="لعبة الحروف" name="twitter:title"/>
+<meta content="إحياء التراث التعليمي السعودي بتقنية عصرية" name="twitter:description"/>
+<meta content="https://7asibali.github.io/huroofgame/twitter-card.png" name="twitter:image"/>
+<title>لعبة الحروف - إحياء التراث التعليمي بلمسة عصرية</title>
+<!-- Canonical URL -->
+<link href="https://7asibali.github.io/huroofgame/" rel="canonical"/>
+<!-- Language alternatives -->
+<link href="https://7asibali.github.io/huroofgame/" hreflang="ar" rel="alternate"/>
+<link href="https://7asibali.github.io/huroofgame/" hreflang="x-default" rel="alternate"/>
+<!-- Favicon -->
+<link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='80' font-size='80'&gt;🎮&lt;/text&gt;&lt;/svg&gt;" rel="icon"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
         /* Global Styles */
         * {
             margin: 0;
@@ -515,6 +508,74 @@
             color: var(--primary-gold);
         }
         
+        .feature-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        
+        /* Modal (Lightbox) Styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1000; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(10, 10, 10, 0.92);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            /* Use flex to center content */
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 85%;
+            max-height: 85vh;
+            animation: zoomIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border-radius: 15px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.8) translateY(20px); opacity: 0; }
+            to { transform: scale(1) translateY(0); opacity: 1; }
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 45px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            line-height: 1;
+            cursor: pointer;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+
+        .close-modal:hover,
+        .close-modal:focus {
+            color: var(--primary-red);
+        }
+
         /* CTA Section */
         .cta-section {
             background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 107, 107, 0.1));
@@ -685,7 +746,7 @@
         
         .comparison-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 3rem;
             align-items: stretch;
         }
@@ -933,144 +994,189 @@
     </style>
 </head>
 <body>
-    <!-- Main container wrapper -->
-    <div class="main-container">
-        <div class="bg-animation">
-            <div class="hex-pattern"></div>
-        </div>
-        <div class="hex-pattern"></div>
-    </div>
-    
-    <section class="hero">
-        <div class="hero-content">
-            <div class="logo-hex">
-                <div class="hex-wrapper">
-                    <div class="hex">
-                        <div class="hex-color-gold"></div>
-                        <div class="hex-color-green"></div>
-                        <div class="hex-color-red"></div>
-                        <div class="hex-shine"></div>
-                        <div class="hex-border"></div>
-                        <div class="hex-glow"></div>
-                        <span class="hex-letter"></span>
-                    </div>
-                </div>
-            </div>
-            
-            <h1>لعبة الحروف</h1>
-            <p class="subtitle">إحياء التراث التعليمي السعودي بتقنية عصرية</p>
-            
-            <div class="features">
-                <div class="feature-card">
-                    <span class="feature-icon">🎮</span>
-                    <h3 class="feature-title">لوحة سداسية تفاعلية</h3>
-                    <p>25 خلية سداسية مع حروف عربية وأرقام تتحول لحروف بلمسة سحرية</p>
-                </div>
-                
-                <div class="feature-card">
-                    <span class="feature-icon">📺</span>
-                    <h3 class="feature-title">شاشة عرض مستقلة</h3>
-                    <p>اعرض الأسئلة للجمهور على شاشة منفصلة بينما تتحكم من جهازك</p>
-                </div>
-                
-                <div class="feature-card">
-                    <span class="feature-icon">🏆</span>
-                    <h3 class="feature-title">نظام نقاط متطور</h3>
-                    <p>احتساب تلقائي للنقاط مع حفظ تراكمي وإدارة الجولات</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="cta-section">
-        <span class="price-badge">🎉 عرض خاص لفترة محدودة 🎉</span>
-        <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">احصل على خصم 40%</h2>
-        <p style="font-size: 1.3rem; margin-bottom: 1.5rem;">استخدم كود الخصم عند الطلب:</p>
-        <div class="promo-code">HROOF40</div>
-        <a href="https://t.me/mprotocol" target="_blank" class="cta-button">
+<!-- Main container wrapper -->
+<div class="main-container">
+<div class="bg-animation">
+<div class="hex-pattern"></div>
+</div>
+<div class="hex-pattern"></div>
+</div>
+<section class="hero">
+<div class="hero-content">
+<div class="logo-hex">
+<div class="hex-wrapper">
+<div class="hex">
+<div class="hex-color-gold"></div>
+<div class="hex-color-green"></div>
+<div class="hex-color-red"></div>
+<div class="hex-shine"></div>
+<div class="hex-border"></div>
+<div class="hex-glow"></div>
+<span class="hex-letter"></span>
+</div>
+</div>
+</div>
+<h1>لعبة الحروف</h1>
+<p class="subtitle">إحياء التراث التعليمي السعودي بتقنية عصرية</p>
+<div class="features">
+<div class="feature-card">
+<img alt="لوحة سداسية تفاعلية" class="feature-image" src="imgs/1.png"/>
+<span class="feature-icon">🎮</span>
+<h3 class="feature-title">لوحة سداسية تفاعلية</h3>
+<p>25 خلية سداسية مع حروف عربية وأرقام تتحول لحروف بلمسة سحرية</p>
+</div>
+<div class="feature-card">
+<img alt="شاشة عرض مستقلة" class="feature-image" src="imgs/2.png"/>
+<span class="feature-icon">📺</span>
+<h3 class="feature-title">شاشة عرض مستقلة</h3>
+<p>اعرض الأسئلة للجمهور على شاشة منفصلة بينما تتحكم من جهازك</p>
+</div>
+<div class="feature-card">
+<img alt="نظام نقاط متطور" class="feature-image" src="imgs/3.png"/>
+<span class="feature-icon">🏆</span>
+<h3 class="feature-title">نظام نقاط متطور</h3>
+<p>احتساب تلقائي للنقاط مع حفظ تراكمي وإدارة الجولات</p>
+</div>
+</div>
+</div>
+</section>
+<section class="cta-section">
+<span class="price-badge">🎉 عرض خاص لفترة محدودة 🎉</span>
+<h2 style="font-size: 2.5rem; margin-bottom: 1rem;">احصل على خصم 40%</h2>
+<p style="font-size: 1.3rem; margin-bottom: 1.5rem;">استخدم كود الخصم عند الطلب:</p>
+<div class="promo-code">HROOF40</div>
+<a class="cta-button" href="https://t.me/mprotocol" target="_blank">
             💬 اطلب كود التفعيل الآن من خلال موظف المبيعات
         </a>
-        <p class="timer">⏳ العرض ينتهي خلال 72 ساعة</p>
-    </section>
-    
-    <section class="screenshots">
-        <h2>شاهد اللعبة في العمل</h2>
-        <div class="screenshot-grid">
-            <div class="screenshot-card">
-                <div class="screenshot-placeholder">🖼️ واجهة اللعبة الرئيسية</div>
-            </div>
-            <div class="screenshot-card">
-                <div class="screenshot-placeholder">🖼️ شاشة العرض للجمهور</div>
-            </div>
-            <div class="screenshot-card">
-                <div class="screenshot-placeholder">🖼️ نافذة الأسئلة</div>
-            </div>
-        </div>
-    </section>
-    
-    
+<p class="timer">⏳ العرض ينتهي خلال 72 ساعة</p>
+</section>
+<section class="screenshots">
+<h2>شاهد اللعبة في العمل</h2>
+<div class="screenshot-grid">
+<div class="screenshot-card">
+<div class="screenshot-placeholder">🖼️ واجهة اللعبة الرئيسية</div>
+</div>
+<div class="screenshot-card">
+<div class="screenshot-placeholder">🖼️ شاشة العرض للجمهور</div>
+</div>
+<div class="screenshot-card">
+<div class="screenshot-placeholder">🖼️ نافذة الأسئلة</div>
+</div>
+</div>
+</section>
 <section class="comparison-section">
-    <h2 class="comparison-title">مقارنة بين الإصدار المجاني والاحترافي</h2>
-    <div class="comparison-grid">
-        <div class="version-card">
-            <div class="version-header">
-                <h3>الإصدار المجاني</h3>
-            </div>
-            <ul class="features-list">
-                <li class="feature-item">✅ كود تفعيل مجاني مدى الحياة</li>
-                <li class="feature-item">✅ إمكانية تشغيل اللعبة لمدة 10 دقائق لكل جلسة</li>
-                <li class="feature-item">✅ عدد جلسات غير محدود</li>
-                <li class="feature-item">✅ إمكانية ترقية التفعيل أي وقت من داخل البرنامج</li>
-                <li class="feature-item">✅ امكانية الاستمتاع بأكثر من 40 سؤال مجانا</li>
-                <li class="feature-item">✅ يعطيك تجربة شبه متكاملة لبرنامج حروف المعهود</li>
-                <li class="feature-item limited">⚠️ عدد محدود من الأسئلة</li>
-                <li class="feature-item limited">⚠️ لا يسحب الأسئلة من ملف خارجي</li>
-                <li class="feature-item limited">❌ لا يفتح نافذة إدارة بنك الاسئلة المتطورة</li>
-                <li class="feature-item limited">❌ لا يمكن استخدام شاشة الجمهور</li>
-                <li class="feature-item disabled">❌ لا يتيح البث إلى المتصفح</li>
-                <li class="feature-item limited">⚠️ لا يحفظ الاعدادات عند الاغلاق</li>
-            </ul>
-            <a href="assets/HuroofGame1.0_SETUP.zip" download class="version-button free-button">
-                    ⬇️ تحميل الإصدار المجاني (ZIP)
-                </a>
-                <small style="display:block; color: var(--text-muted); margin-top: 8px;">
+<h2 class="comparison-title">مقارنة بين الإصدار المجاني والاحترافي</h2>
+<div class="comparison-grid">
+<div class="version-card pro-version">
+<div class="popular-badge">الأكثر شعبية</div>
+<div class="version-header">
+<h3>الإصدار السنوي</h3>
+<div class="price">
+<span class="old-price">64 USD</span>
+<span class="currency">32 USD</span>
+<span class="period">صالح لمدة سنة</span>
+</div>
+</div>
+<ul class="features-list">
+<li class="feature-item">🔒 يحتاج كود شراء وتفعيل</li>
+<li class="feature-item">✅ تشغيل اللعبة مدى الحياة بدون حدود زمنية</li>
+<li class="feature-item">✅ يعمل على جهازك بثبات مع ضمان تشغيل دائم</li>
+<li class="feature-item">✅ فتح برنامج إدارة بنك الأسئلة المتطورة</li>
+<li class="feature-item">✅ بنك أسئلة مجاني مدمج</li>
+<li class="feature-item">✅ إمكانية إضافة ألوف الأسئلة من ملف خارجي</li>
+<li class="feature-item">✅ استخدام شاشة الجمهور بدون أي قيود</li>
+<li class="feature-item">✅ يتيح البث المباشر إلى المتصفح داخل الشبكة المحلية</li>
+<li class="feature-item">✅ يحفظ جميع الإعدادات والتعديلات تلقائيًا عند الإغلاق</li>
+<li class="feature-item">✅ يدعم تخصيص الإعدادات وصورة الاحتفال في شاشة الجمهور</li>
+<li class="feature-item">✅ يفتح جميع الأدوات والخصائص الإضافية داخل البرنامج</li>
+<li class="feature-item limited">⚠️ يحتاج تجديد بعد سنة</li></ul>
+<a class="version-button pro-button" href="https://t.me/mprotocol" target="_blank">اطلب الآن عبر تيليجرام</a>
+</div><div class="version-card">
+<div class="version-header">
+<h3>الإصدار المجاني</h3>
+</div>
+<ul class="features-list">
+<li class="feature-item">✅ كود تفعيل مجاني مدى الحياة</li>
+<li class="feature-item">✅ إمكانية تشغيل اللعبة لمدة 10 دقائق لكل جلسة</li>
+<li class="feature-item">✅ عدد جلسات غير محدود</li>
+<li class="feature-item">✅ إمكانية ترقية التفعيل أي وقت من داخل البرنامج</li>
+<li class="feature-item">✅ امكانية الاستمتاع بأكثر من 40 سؤال مجانا</li>
+<li class="feature-item">✅ يعطيك تجربة شبه متكاملة لبرنامج حروف المعهود</li>
+<li class="feature-item limited">⚠️ عدد محدود من الأسئلة</li>
+<li class="feature-item limited">⚠️ لا يسحب الأسئلة من ملف خارجي</li>
+<li class="feature-item limited">❌ لا يفتح نافذة إدارة بنك الاسئلة المتطورة</li>
+<li class="feature-item limited">❌ لا يمكن استخدام شاشة الجمهور</li>
+<li class="feature-item disabled">❌ لا يتيح البث إلى المتصفح</li>
+<li class="feature-item limited">⚠️ لا يحفظ الاعدادات عند الاغلاق</li>
+</ul>
+<a class="version-button free-button" download="" href="https://t.me/mprotocol" target="_blank">اطلب الآن عبر تيليجرام</a>
+<small style="display:block; color: var(--text-muted); margin-top: 8px;">
                     بعد التحميل، قم بفك الضغط ثم شغّل الملف HuroofGame1.0_SETUP.exe
                 </small>
-        </div>
-        <div class="version-card pro-version">
-            <div class="popular-badge">الأكثر شعبية</div>
-            <div class="version-header">
-                <h3>الإصدار الاحترافي</h3>
-                <div class="price">
-                    <span class="old-price">200 USD</span>
-                    <span class="currency">100 USD</span>
-                    <span class="period">مدى الحياة</span>
-                </div>
-            </div>
-            <ul class="features-list">
-                <li class="feature-item">🔒 يحتاج كود شراء وتفعيل</li>
-                <li class="feature-item">✅ تشغيل اللعبة مدى الحياة بدون حدود زمنية</li>
-                <li class="feature-item">✅ يعمل على جهازك بثبات مع ضمان تشغيل دائم</li>
-                <li class="feature-item">✅ فتح برنامج إدارة بنك الأسئلة المتطورة</li>
-                <li class="feature-item">✅ بنك أسئلة مجاني مدمج</li>
-                <li class="feature-item">✅ إمكانية إضافة ألوف الأسئلة من ملف خارجي</li>
-                <li class="feature-item">✅ استخدام شاشة الجمهور بدون أي قيود</li>
-                <li class="feature-item">✅ يتيح البث المباشر إلى المتصفح داخل الشبكة المحلية</li>
-                <li class="feature-item">✅ يحفظ جميع الإعدادات والتعديلات تلقائيًا عند الإغلاق</li>
-                <li class="feature-item">✅ يدعم تخصيص الإعدادات وصورة الاحتفال في شاشة الجمهور</li>
-                <li class="feature-item">✅ يفتح جميع الأدوات والخصائص الإضافية داخل البرنامج</li>
-            </ul>
-            <a href="https://wa.me/966500042708" target="_blank" class="version-button pro-button">اطلب النسخة الاحترافية</a>
-        </div>
-    </div>
-</section>
-
+</div>
+<div class="version-card pro-version">
+<div class="popular-badge">الأكثر شعبية</div>
+<div class="version-header">
+<h3>الإصدار الاحترافي</h3>
+<div class="price">
+<span class="old-price">200 USD</span>
+<span class="currency">100 USD</span>
+<span class="period">مدى الحياة</span>
+</div>
+</div>
+<ul class="features-list">
+<li class="feature-item">🔒 يحتاج كود شراء وتفعيل</li>
+<li class="feature-item">✅ تشغيل اللعبة مدى الحياة بدون حدود زمنية</li>
+<li class="feature-item">✅ يعمل على جهازك بثبات مع ضمان تشغيل دائم</li>
+<li class="feature-item">✅ فتح برنامج إدارة بنك الأسئلة المتطورة</li>
+<li class="feature-item">✅ بنك أسئلة مجاني مدمج</li>
+<li class="feature-item">✅ إمكانية إضافة ألوف الأسئلة من ملف خارجي</li>
+<li class="feature-item">✅ استخدام شاشة الجمهور بدون أي قيود</li>
+<li class="feature-item">✅ يتيح البث المباشر إلى المتصفح داخل الشبكة المحلية</li>
+<li class="feature-item">✅ يحفظ جميع الإعدادات والتعديلات تلقائيًا عند الإغلاق</li>
+<li class="feature-item">✅ يدعم تخصيص الإعدادات وصورة الاحتفال في شاشة الجمهور</li>
+<li class="feature-item">✅ يفتح جميع الأدوات والخصائص الإضافية داخل البرنامج</li>
+</ul>
+<a class="version-button pro-button" href="https://t.me/mprotocol" target="_blank">اطلب الآن عبر تيليجرام</a>
+</div>
+</div>
+</section><div style="text-align: center; margin: 3rem 0;"><a class="version-button free-button" download="" href="assets/HuroofGame1.0_SETUP.zip">⬇️ تحميل البرنامج الموحد (ZIP)</a><p style="color: var(--text-muted); margin-top: 8px;">بعد التحميل، قم بفك الضغط وتشغيل HuroofGame1.0_SETUP.exe</p></div>
 <footer>
-        <p>لعبة حروف | جميع الحقوق محفوظة © 2025</p>
-    </footer>
-    
-    <!-- Simple Analytics (Optional) -->
-    <script>
+<p>لعبة حروف | جميع الحقوق محفوظة © 2025</p>
+</footer>
+<!-- Image Modal -->
+<div id="imageModal" class="modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="modalImage"/>
+</div>
+<!-- Simple Analytics (Optional) -->
+<script>
+        // Image Modal Logic
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        const closeModalBtn = document.querySelector(".close-modal");
+
+        document.querySelectorAll('.feature-image').forEach(image => {
+            image.addEventListener('click', function() {
+                modal.style.display = "flex"; // Use flex to center the content
+                modalImg.src = this.src;
+            });
+        });
+
+        const closeModal = () => {
+            modal.style.display = "none";
+            modalImg.src = ""; // Clear src to stop potential video/gif playback
+        };
+
+        closeModalBtn.addEventListener('click', closeModal);
+
+        // Close modal when clicking on the background overlay
+        modal.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+
         // Track WhatsApp button clicks
         document.querySelector('.cta-button').addEventListener('click', function() {
             console.log('WhatsApp button clicked');
@@ -1117,9 +1223,8 @@
             document.querySelectorAll('img.lazy').forEach(img => imageObserver.observe(img));
         }
     </script>
-    
-    <!-- Google Analytics (Optional - Replace GA_MEASUREMENT_ID) -->
-    <!--
+<!-- Google Analytics (Optional - Replace GA_MEASUREMENT_ID) -->
+<!--
     <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
