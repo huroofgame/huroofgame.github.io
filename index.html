@@ -904,7 +904,23 @@
             overflow: hidden;
             position: relative;
         }
-        
+        .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* نسبة 16:9 */
+    height: 0;
+    overflow: hidden;
+    background: #000;
+    border-radius: 15px 15px 0 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .logo-hex {
@@ -1054,8 +1070,15 @@
 <h2>شاهد اللعبة في العمل</h2>
 <div class="screenshot-grid">
 <div class="screenshot-card">
-<div class="screenshot-placeholder">🖼️ واجهة اللعبة الرئيسية</div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/53oGLJEyU90?si=yU0PV14ktzqd3bE5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/53oGLJEyU90?si=yU0PV14ktzqd3bE5" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen></iframe>
+    </div>
+    <p style="text-align: center; margin-top: 1rem; color: var(--primary-gold);">واجهة اللعبة الرئيسية</p>
 </div>
 <div class="screenshot-card">
 <div class="screenshot-placeholder">🖼️ شاشة العرض للجمهور</div>
